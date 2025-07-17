@@ -8,7 +8,7 @@ use hex::Hex;
 mod hex;
 
 let hex = Hex::encode("My little string...");
-println!("Encoded: {}", hex);
+println!("Encoded: {}", &hex);
 
 let str = Hex::decode(hex);
 println!("Decoded: {}", str);
